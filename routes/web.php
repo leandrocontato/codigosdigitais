@@ -19,7 +19,6 @@ Route::resource('acessos', App\Http\Controllers\AcessoController::class);
 Route::resource('clientes', App\Http\Controllers\ClienteController::class);
 Route::get('/clientes/relatorios/albums', [ClienteController::class, 'albumsReport'])->name('clientes.albums_report');
 
-
 // Route::resource('acessos', App\Http\Controllers\AcessoController::class);
 // Route::get('/acessos', [AcessoController::class, 'index'])->name('acessos.index');
 // Route::get('/acessos/create', [AcessoController::class, 'create'])->name('acessos.create');
