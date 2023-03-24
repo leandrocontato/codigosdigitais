@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AcessoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('acessos', App\Http\Controllers\AcessoController::class);
 Route::get('/acessos', [AcessoController::class, 'index'])->name('acessos.index');
 Route::get('/acessos/create', [AcessoController::class, 'create'])->name('acessos.create');
 Route::post('/acessos', [AcessoController::class, 'store'])->name('acessos.store');
